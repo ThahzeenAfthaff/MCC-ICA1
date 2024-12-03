@@ -1,10 +1,16 @@
 import '../assets/CSS/layout.css';
 import React, { useState } from 'react';
+
 import Product from './Product';
+
 import Cart from './Cart';
+
 import { flowers } from './FlowerDB';
+
 export default function Products(){
     const [cartItems, setCartItems] = useState([]);
+
+
 
     const addToCart = (flower, quantity) => {
         const existingItem = cartItems.find(item => item.id === flower.id);
@@ -34,6 +40,7 @@ export default function Products(){
 
             </div>
             <div className="item3">
+                
                 {
                 //cart
                 <Cart cartItems={cartItems} />
