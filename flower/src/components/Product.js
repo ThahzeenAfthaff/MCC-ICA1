@@ -1,5 +1,7 @@
 import '../assets/CSS/layout.css';
 import React, { useState } from 'react';
+
+
 export default function Product({ flower, addToCart}){
     
     const [quantity, setQuantity] = useState(0);
