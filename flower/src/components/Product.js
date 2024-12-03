@@ -6,8 +6,9 @@ export default function Product({ flower, addToCart}){
 
     const handleAddToCart  = () => {
         if (quantity > 0) {
-            addToCart(flower, quantity);
+            addToCart(flower,quantity);
             setQuantity(0); 
+           
         }
     };
     
