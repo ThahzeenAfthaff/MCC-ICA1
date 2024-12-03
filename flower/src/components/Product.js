@@ -4,7 +4,7 @@ export default function Product({ flower, addToCart}){
     
     const [quantity, setQuantity] = useState(0);
 
-    const handleAddToCart = () => {
+    const handleAddToCart  = () => {
         if (quantity > 0) {
             addToCart(flower, quantity);
             setQuantity(0); 
