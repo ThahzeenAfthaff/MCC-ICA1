@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 
 
 export default function Product({ flower, addToCart}){
-    
     const [quantity, setQuantity] = useState(0);
+  
 
     const handleAddToCart  = () => {
         if (quantity > 0) {
